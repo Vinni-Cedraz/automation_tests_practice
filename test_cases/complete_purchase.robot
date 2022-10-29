@@ -6,7 +6,7 @@
 #    By: vcedraz- <vcedraz-@student.42sp.org.br>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/29 15:03:12 by vcedraz-          #+#    #+#              #
-#    Updated: 2022/10/29 20:11:55 by vcedraz-         ###   ########.fr        #
+#    Updated: 2022/10/29 20:34:37 by vcedraz-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,5 +41,16 @@ Scenario: complete_purchase
 	Click Element                              id=years
 	Click Element                              xpath=//option[@value='1998']
 	Click Button 														 	 id=newsletter
-
+	Input Text                                 id=company                 ACME
+	Input Text                                 id=address1                1234 Main Street
+	Input Text                                 id=address2                Apt 123
+	Input Text                                 id=city                    Anytown
+	Input Text                                 id=postcode                12345
+	Click Element                              id=id_country
+	Click Element                              xpath=//option[@value='21']
+	Input Text                                 id=other                   This is a test
+	Input Text                                 id=phone              			1234567890
+	Input Text                                 id=phone_mobile            1234567890
+	Input Text                                 id=alias                   1234 Main Street
+	Click Button                               id=submitAccount
 
