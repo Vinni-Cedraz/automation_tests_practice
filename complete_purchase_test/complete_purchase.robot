@@ -65,4 +65,4 @@ Scenario: complete_purchase
     Wait Until Element Is Visible    xpath=//a[@class='bankwire']    timeout=15
     Click Element    xpath=//a[@class='bankwire']
     Click Button    xpath=//button[@type='submit']
-		Page Should Contain    Please enter a search keyword
+    Page Should Contain    Please enter a search keyword
