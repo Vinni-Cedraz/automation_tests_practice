@@ -1,6 +1,5 @@
 ***Variables***
-${URL}												http://automationpractice.com/index.php
-${BROWSER} 										firefox	
+
 ${SEARCH_BOX}									id=search_query_top
 ${SEARCH_BUTTON}							name=submit_search
 ${SHOWCASE}										css=div[class="product-container"
@@ -26,13 +25,13 @@ ${INPUT_ADDRESS2}							id=address2
 ${INPUT_CITY}									id=city
 ${STATE_LIST}									id=id_state
 ${STATE_OPTION}								xpath=//select[@id='id_state']/option[@value='5']
-${POSTCODE}										id=postcode
+${INPUT_POSTCODE}							id=postcode
 ${COUNTRY_LIST}								id=id_country
 ${COUNTRY_OPTION}							xpath=//select[@id='id_country']/option[@value='21']
-${OTHER}											id=other
-${PHONE}											id=phone
-${PHONE_MOBILE}								id=phone_mobile
-${ALIAS}											id=alias
+${INPUT_OTHER}											id=other
+${INPUT_PHONE}											id=phone
+${INPUT_PHONE_MOBILE}								id=phone_mobile
+${INPUT_ALIAS}											id=alias
 ${SUBMIT_ACCOUNT}							id=submitAccount
 ${PROCESS_ADDRESS}						xpath=//button[@name='processAddress']
 ${CHECKBOX_TERMS}							id=cgv
