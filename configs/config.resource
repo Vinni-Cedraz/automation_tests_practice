@@ -4,7 +4,7 @@ ${URL}												http://automationpractice.com/index.php
 ${BROWSER} 										firefox	
 ${PRODUCT}										Dress
 ${TIMEOUT}										15
-${EMAIL}											emailtest_03_@gmail.com
+${EMAIL}											emailtest_04_@gmail.com
 ${FIRSTNAME}									Eduardo
 ${LASTNAME}										Alvarez
 ${PASSWORD}										123456

@@ -5,7 +5,7 @@ Test Setup     		Open Browser    ${URL}					${BROWSER}
 Test Teardown     Close Browser
 
 Resource    ../page_objects/locators.robot
-Resource    ../resources/config.resource
+Resource    ../configs/config.resource
 Resource    ../resources/keywords.resource
 
 
