@@ -2,16 +2,7 @@
 ${URL}              http://automationpractice.com/index.php
 ${BROWSER}          firefox
 ${PRODUCT}          Dress
-${TIMEOUT}          45
-${EMAIL1}           emailtest_9as8dfn@email.com
-${EMAIL2}						emailtest_mn23k4@email.com
-${EMAIL3}						emailtest_09832@email.com	
-${EMAIL4}						emailtest_jk23h4b@email.com
-${EMAIL5}						emailtest_9283h43@email.com
-${EMAIL6}						emailtest_m329cn#@email.com
-${EMAIL7}						emailtest_j&523n@email.com
-${EMAIL8}						emailtest_J8234h%3@email.com
-${EMAIL9}						emailtest_22834yhn_@email.com
+${TIMEOUT}          65
 ${FIRSTNAME}        Eduardo
 ${LASTNAME}         Alvarez
 ${PASSWORD}         123456
