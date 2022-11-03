@@ -78,7 +78,8 @@ Given that I am on the subscription page
     Click Element    ${CHECKOUT_HREF}
     Wait Until Element Is Visible    ${EMAIL_CREATE}    ${TIMEOUT}
 When I input the data to create my account and click on submit 
-    Input Text    ${EMAIL_CREATE}    ${EMAIL1}
+		${email} =    Generate Random String    10    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    Input Text    ${EMAIL_CREATE}    ${email}@email.com
     Click Button    ${EMAIL_CREATE_BUTTON}
     Wait Until Element Is Visible    ${GENDER}    ${TIMEOUT}
     Click Element    ${GENDER}
@@ -132,7 +133,8 @@ Given that I created my account succesfully
     Wait Until Element Is Visible    ${CHECKOUT_HREF}    ${TIMEOUT}
     Click Element    ${CHECKOUT_HREF}
     Wait Until Element Is Visible    ${EMAIL_CREATE}    ${TIMEOUT}
-    Input Text    ${EMAIL_CREATE}    ${EMAIL2}
+		${email} =    Generate Random String    10    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    Input Text    ${EMAIL_CREATE}    ${email}@email.com
     Click Button    ${EMAIL_CREATE_BUTTON}
     Wait Until Element Is Visible    ${GENDER}    ${TIMEOUT}
     Click Element    ${GENDER}
@@ -189,7 +191,8 @@ Given that I decided the shipping address
     Wait Until Element Is Visible    ${CHECKOUT_HREF}    ${TIMEOUT}
     Click Element    ${CHECKOUT_HREF}
     Wait Until Element Is Visible    ${EMAIL_CREATE}    ${TIMEOUT}
-    Input Text    ${EMAIL_CREATE}    ${EMAIL3}
+		${email} =    Generate Random String    10    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    Input Text    ${EMAIL_CREATE}    ${email}@email.com
     Click Button    ${EMAIL_CREATE_BUTTON}
     Wait Until Element Is Visible    ${GENDER}    ${TIMEOUT}
     Click Element    ${GENDER}
@@ -234,6 +237,7 @@ When I accept terms of service
 Then in the next page I should be able to choose the shipping method
     Wait Until Element Is Visible    ${PROCESS_CARRIER}    ${TIMEOUT}
 
+
 Given that I chose the shipping method
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
@@ -248,7 +252,8 @@ Given that I chose the shipping method
     Wait Until Element Is Visible    ${CHECKOUT_HREF}    ${TIMEOUT}
     Click Element    ${CHECKOUT_HREF}
     Wait Until Element Is Visible    ${EMAIL_CREATE}    ${TIMEOUT}
-    Input Text    ${EMAIL_CREATE}    ${EMAIL4}
+		${email} =    Generate Random String    10    abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789
+    Input Text    ${EMAIL_CREATE}    ${email}@email.com
     Click Button    ${EMAIL_CREATE_BUTTON}
     Wait Until Element Is Visible    ${GENDER}    ${TIMEOUT}
     Click Element    ${GENDER}
