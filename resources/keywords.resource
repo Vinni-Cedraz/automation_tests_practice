@@ -4,11 +4,12 @@ Given that I search for the product
 
 When I click on the search button
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
 
 Then I should see the product showcase
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
-    Sleep    1s
+    Sleep    1
 
 Given that the product is available
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
@@ -25,6 +26,7 @@ Then the add to cart button should be visible
 Given that the add to cart button is available
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
@@ -39,6 +41,7 @@ Then the proceed to checkout button should become visible
 Given that the product is added to the cart
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
@@ -56,6 +59,7 @@ Then next page contains the product's price and another proceed to checkout butt
 Given that I confirmed the price
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
@@ -75,6 +79,7 @@ Then the next page should require my subscription
 Given that I am on the subscription page
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
@@ -133,6 +138,7 @@ Then the next page confirm the address where the product will be shipped to
 Given that I created my account succesfully
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
@@ -193,6 +199,7 @@ Then the next page should ask to accept terms of service
 Given that I decided the shipping address
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
@@ -255,6 +262,7 @@ Then in the next page I should be able to choose the shipping method
 Given that I chose the shipping method
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
+		BuiltIn.Sleep    10
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
     Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
