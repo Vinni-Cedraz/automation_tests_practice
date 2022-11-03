@@ -21,4 +21,4 @@ ${PHONE}            123456789
 ${CELLPHONE}        987654321
 ${ALIAS}            Home
 ${EXPECTED_TEXT}    Please enter a search keyword
-${PRICE}						$
+${PRICE}            $
