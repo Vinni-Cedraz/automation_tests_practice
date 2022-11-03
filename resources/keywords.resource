@@ -5,12 +5,15 @@ When I click on the search button
     Click Button    ${SEARCH_BUTTON}
 Then I should see the product showcase
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
+		Sleep 	1s
 
 
 Given that the product is available
     Input Text    ${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
 When I hover over the product
     Mouse Over    ${PRODUCT_NAME}
 Then the add to cart button should be visible
@@ -20,6 +23,7 @@ Given that the add to cart button is available
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
 When I click on the add to cart button
@@ -31,6 +35,7 @@ Given that the product is added to the cart
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
     Click Element    ${ADD_TO_CART}
@@ -45,6 +50,7 @@ Given that I confirmed the price
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
     Click Element    ${ADD_TO_CART}
@@ -61,6 +67,7 @@ Given that I am on the subscription page
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
     Click Element    ${ADD_TO_CART}
@@ -115,6 +122,7 @@ Given that I created my account succesfully
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
     Click Element    ${ADD_TO_CART}
@@ -171,6 +179,7 @@ Given that I decided the shipping address
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
     Click Element    ${ADD_TO_CART}
@@ -229,6 +238,7 @@ Given that I chose the shipping method
 		Input Text    	${SEARCH_BOX}    ${PRODUCT}
     Click Button    ${SEARCH_BUTTON}
     Wait Until Element Is Visible    ${SHOWCASE}    ${TIMEOUT}
+		Scroll Element Into View    		 ${SHOWCASE}
     Mouse Over    ${PRODUCT_NAME}
     Wait Until Element Is Visible    ${ADD_TO_CART}    ${TIMEOUT}
     Click Element    ${ADD_TO_CART}
